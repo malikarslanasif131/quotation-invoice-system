@@ -60,6 +60,17 @@ folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.bl
 
 
 
+==============================================
+ 
+now complete code for ItemController and views/items  -- Working 
+
+ ItemController
+
+inside resources/views/items:
+folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
+
+
+
 
 
 

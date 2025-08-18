@@ -1,0 +1,112 @@
+i want to create this project in laravel:
+
+Quotation & Invoice Management System (Very useful for real clients 🚀)
+
+Add clients & items.
+
+Create quotations with dynamic items.
+
+Convert quotation → invoice.
+
+Download invoices as PDF.
+
+Dashboard with total revenue, pending payments.
+
+
+--------------------------------------------------------------------------------------------------------
+
+php artisan make:controller ClientController --resource
+php artisan make:controller ItemController --resource
+php artisan make:controller QuotationController --resource
+php artisan make:controller InvoiceController --resource
+php artisan make:controller DashboardController
+
+Create Views Structure Folders inside resources/views/:
+
+clients
+items
+quotations
+invoices
+dashboard
+Each folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
+
+
+
+==============================================
+
+now complete code for DashboardController and views/dashboard     -- DONE
+
+ DashboardController
+
+inside resources/views/dashboard:
+folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
+==============================================
+ 
+now complete code for ClientController and views/clients  -- DONE 
+
+ ClientController
+
+inside resources/views/clients:
+folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
+
+==============================================
+ 
+now complete code for QuotationController and views/quotations  -- DONE 
+
+ QuotationController
+
+inside resources/views/quotations:
+folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+3. Add Authentication
+Install Laravel Breeze (simple authentication scaffolding):
+
+bash
+composer require laravel/breeze --dev
+php artisan breeze:install
+npm install && npm run dev
+php artisan migrate
+This sets up registration, login, and password reset.
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+

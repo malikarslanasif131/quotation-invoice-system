@@ -80,6 +80,12 @@ inside resources/views/invoices:
 folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
 
 
+==============================================================================================
+
+Need to Work Export in CSV and XLSX
+
+SINGLE < SINGLE in PDF
+
 
 
 

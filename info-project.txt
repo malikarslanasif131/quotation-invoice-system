@@ -62,11 +62,21 @@ folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.bl
 
 ==============================================
  
-now complete code for ItemController and views/items  -- Working 
+now complete code for ItemController and views/items  -- DONE 
 
  ItemController
 
 inside resources/views/items:
+folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
+
+
+==============================================
+ 
+now complete code for InvoiceController and views/invoices  -- DONE 
+
+ InvoiceController
+
+inside resources/views/invoices:
 folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.blade.php.
 
 

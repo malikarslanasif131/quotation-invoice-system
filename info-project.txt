@@ -82,6 +82,15 @@ folder typically has: index.blade.php, create.blade.php, edit.blade.php, show.bl
 
 ==============================================================================================
 
+a complete solution for generating an Invoice PDF in Laravel when the user clicks
+ “Generate PDF”
+ 
+on the invoice detail page.
+
+=============================================================
+
+
+
 Need to Work Export in CSV and XLSX
 
 SINGLE < SINGLE in PDF

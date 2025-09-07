@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Barryvdh\DomPDF\Facade\Pdf; // Add this at the top
 use App\Models\Invoice;
 use App\Models\Client;
 use App\Models\Item;
@@ -157,5 +158,16 @@ class InvoiceController extends Controller
         $invoice->items()->delete();
         $invoice->delete();
         return redirect()->route('invoices.index')->with('success', 'Invoice deleted!');
+    }
+
+
+    public function downloadPDF($id)
+    {
+        $invoice = Invoice::with(['client', 'items.item', 'quotation'])->findOrFail($id);
+
+        $pdf = Pdf::loadView('invoices.pdf', compact('invoice'));
+        $filename = 'Invoice-' . $invoice->id . '.pdf';
+
+        return $pdf->download($filename);
     }
 }

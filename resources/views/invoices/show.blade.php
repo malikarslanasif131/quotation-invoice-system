@@ -43,4 +43,5 @@
     </table>
     <a href="{{ route('invoices.edit', $invoice) }}" class="btn btn-warning">Edit</a>
     <a href="{{ route('invoices.index') }}" class="btn btn-secondary">Back to List</a>
+    <a href="{{ route('invoices.download', $invoice) }}" class="btn btn-success" target="_blank">Generate PDF</a>
 @endsection
